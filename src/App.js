@@ -70,7 +70,7 @@ function App({lang}) {
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="/">
+								<a className="nav-link" href="https://www.tiktok.com/@kibugame" target="_blank" rel="noreferrer noopener">
 									<img src="/Union.png" height="20" alt="union" />
 								</a>
 							</li>
@@ -141,7 +141,7 @@ function App({lang}) {
 							<a href="https://www.instagram.com/letskeepit_betweenus/" target="_blank" rel="noreferrer noopener" className="mx-4">
 								<img src="/Instagram.png" height="20" alt="instagram" />
 							</a>
-							<a href="/">
+							<a href="https://www.tiktok.com/@kibugame" target="_blank" rel="noreferrer noopener">
 								<img src="/Union.png" height="20" alt="union" />
 							</a>
 						</div>

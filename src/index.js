@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Privacy from './Privacy';
+import Terms from './Terms';
 import reportWebVitals from './reportWebVitals';
 import {
 	BrowserRouter as Router,
@@ -13,6 +15,12 @@ ReactDOM.render(
 	<React.StrictMode>
 		<Router>
 			<Switch>
+				<Route path="/terms">
+					<Terms />
+				</Route>
+				<Route path="/privacy">
+					<Privacy />
+				</Route>
 				<Route path="/en">
 					<App lang="en" />
 				</Route>

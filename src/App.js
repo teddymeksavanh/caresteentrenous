@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import i18n from './i18n.json';
+import { Link } from "react-router-dom";
 import './App.scss';
 
 function App({lang}) {
 	const [toggle, setToggle] = useState(false);
 	const handleToggle = () => setToggle(!toggle);
+	const body = document.getElementById('kibu-body');
+	body.classList.remove('body-fr-otherpage');
 	if(lang === 'fr') {
-		document.getElementById('kibu-body').classList.add('body-fr');
+		body.classList.add('body-fr');
 	}
   	return (
 		<section className="home h-100">
@@ -24,14 +27,14 @@ function App({lang}) {
 					{ toggle && <div className="kibu-navbar-collapse">
 						<ul>
 							<li>
-								<a className="empty-a" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">
+								<Link className="empty-a" to="/privacy">
 									{ i18n.privacy[lang] || 'Privacy policy' }
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a className="empty-a" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">
+								<Link className="empty-a" to="/terms">
 									{ i18n.terms[lang] || 'Terms of use' }
-								</a>
+								</Link>
 							</li>
 							<li>
 								<a className="empty-a" href="mailto:customerassistant@betterdays.co">Contact</a>
@@ -44,14 +47,14 @@ function App({lang}) {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<a className="nav-link" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">
+								<Link className="nav-link" to="/privacy">
 									{ i18n.privacy[lang] || 'Privacy policy' }
-								</a>
+								</Link>
 							</li>
 							<li className={`nav-item ${lang === 'fr' ? 'mx-1' : 'mx-4'}`}>
-								<a className="nav-link" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">
+								<Link className="nav-link" to="/terms">
 									{ i18n.terms[lang] || 'Terms of use' }
-								</a>
+								</Link>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="mailto:customerassistant@betterdays.co">Contact</a>

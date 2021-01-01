@@ -1,7 +1,10 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.scss';
 
 function App() {
+	const [toggle, setToggle] = useState(false);
+	const handleToggle = () => setToggle(!toggle);
   	return (
 		<section className="home h-100">
 			<div className="container fixed-top px-0 mt-3">
@@ -12,10 +15,26 @@ function App() {
 							<h5 className="text-uppercase mb-0 title">Kibu</h5>
 						</div>
 					</a>
-					<button className="navbar-toggler kibu-toggler" type="button" dataToggle="collapse" dataTarget="#navbarText" ariaControls="navbarText" ariaExpanded="false" ariaLabel="Toggle navigation">
+					<button className="navbar-toggler kibu-toggler" onClick={() => handleToggle()} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<img src="/menu.png" width="30" alt="menu" />
 					</button>
-					<div className="collapse navbar-collapse" id="navbarText">
+					{ toggle && <div className="kibu-navbar-collapse">
+						<ul>
+							<li>
+								<a className="empty-a" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">Privacy policy</a>
+							</li>
+							<li>
+								<a className="empty-a" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">Terms of use</a>
+							</li>
+							<li>
+								Contact
+							</li>
+							<li>
+								Rate Kibu ⭐
+							</li>
+						</ul>
+					</div> }
+					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
 								<a className="nav-link" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">Privacy policy</a>

@@ -5,13 +5,16 @@ import './App.scss';
 function App({lang}) {
 	const [toggle, setToggle] = useState(false);
 	const handleToggle = () => setToggle(!toggle);
+	if(lang === 'fr') {
+		document.getElementById('kibu-body').classList.add('body-fr');
+	}
   	return (
 		<section className="home h-100">
 			<div className="container fixed-top px-0 mt-3">
 				<nav className="navbar navbar-expand-lg navbar-light">
 					<a className="navbar-brand" href="/">
 						<div className="vertical-align">
-							<img src="/logo.png" height="40" className="mr-3 logo" alt="logo" />
+							<img src="/logo.png" height="40" className="logo" alt="logo" />
 							<h5 className="text-uppercase mb-0 title">Kibu</h5>
 						</div>
 					</a>
@@ -31,7 +34,7 @@ function App({lang}) {
 								</a>
 							</li>
 							<li>
-								Contact
+								<a className="empty-a" href="mailto:customerassistant@betterdays.co">Contact</a>
 							</li>
 							<li>
 								Rate Kibu ⭐
@@ -45,21 +48,21 @@ function App({lang}) {
 									{ i18n.privacy[lang] || 'Privacy policy' }
 								</a>
 							</li>
-							<li className="nav-item mx-4">
+							<li className={`nav-item ${lang === 'fr' ? 'mx-1' : 'mx-4'}`}>
 								<a className="nav-link" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">
 									{ i18n.terms[lang] || 'Terms of use' }
 								</a>
 							</li>
 							<li className="nav-item">
-								<span className="nav-link" >Contact</span>
+								<a className="nav-link" href="mailto:customerassistant@betterdays.co">Contact</a>
 							</li>
-							<li className="nav-item ml-5">
-								<a className="nav-link" href="/">
+							<li className={`nav-item ${lang === 'fr' ? 'ml-2' : 'ml-5'}`}>
+								<a className="nav-link" href="https://www.facebook.com/gaming/kibugame/" target="_blank" rel="noreferrer noopener">
 									<img src="/Facebook.png" height="20" alt="facebook" />
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="/">
+								<a className="nav-link" href="https://www.instagram.com/letskeepit_betweenus/" target="_blank" rel="noreferrer noopener">
 									<img src="/Instagram.png" height="20" alt="instagram" />
 								</a>
 							</li>
@@ -93,7 +96,7 @@ function App({lang}) {
 				<span className="d-none d-md-block footer-copyright">Copyright © 2020 TJBKG consulting OÜ. All Rights Reserved.</span>
 
 				<div className="row h-100">
-					<div className="col-lg-6 col-md-6 vertical-align">
+					<div className="col-lg-6 col-md-6 vertical-align" id="body-fr-col">
 						<div>
 							<h5 className="text-uppercase mb-4 text-white-semi font-light kibu-toptext">
 								{ i18n.kibuToptext[lang] || "LET'S KEEP IT BETWEEN US" }
@@ -107,7 +110,7 @@ function App({lang}) {
 								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
 							</h5>
 							<div className="d-flex">
-								<a href="/" className="vertical-align btn-app mr-4 btn-app-apple">
+								<a href="/" className="vertical-align btn-app mr-3 btn-app-apple">
 									<img src="/Apple.png" alt="apple" className="mr-3 btn-apple-img" />
 									<div>
 										<span className="btn-app-subtitle">Download on the</span>
@@ -129,10 +132,10 @@ function App({lang}) {
 					</div>
 					<div className="col-lg-6 col-md-6 d-block d-sm-block d-md-none">
 						<div className="text-center">
-							<a href="/">
+							<a href="https://www.facebook.com/gaming/kibugame/" target="_blank" rel="noreferrer noopener">
 								<img src="/Facebook.png" height="20" alt="facebook" />
 							</a>
-							<a href="/" className="mx-4">
+							<a href="https://www.instagram.com/letskeepit_betweenus/" target="_blank" rel="noreferrer noopener" className="mx-4">
 								<img src="/Instagram.png" height="20" alt="instagram" />
 							</a>
 							<a href="/">

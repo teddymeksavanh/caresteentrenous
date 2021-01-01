@@ -5,7 +5,9 @@
 }
 
 .logo{
-	border-radius: 10px;
+	border-radius: 15px;
+	box-shadow: rgba(14, 30, 37, 0.22) 0px 2px 4px 0px, rgba(14, 30, 37, 0.42) 0px 2px 16px 0px;
+	margin-right: 12px;
 }
 
 .text-white-semi{
@@ -145,6 +147,17 @@ body {
 	background: linear-gradient(80deg, #255AC4 53%, #fff962 0%); 
 }
 
+@media (min-width: 768px) {
+	.body-fr{
+		background: linear-gradient(80deg, #255AC4 50%, #fff962 0%);
+		
+		#body-fr-col{
+			max-width: 45%;
+		}
+	}
+}
+
+
 html, body, #root{
 	height: 100%;
 }
@@ -178,7 +191,7 @@ html, body, #root{
 
 		.header-title{
 			text-align: center;
-			font-size: 2.1rem;
+			font-size: 2.5rem;
 		}
 
 		.kibu-subtext{
@@ -241,5 +254,64 @@ html, body, #root{
 
 	html, body, #root{
 		height: auto;
+	}
+}
+
+@media (max-height: 812px) and (max-width: 768px) {
+	body{
+		background: linear-gradient(10deg, #fff962 42%, #255AC4 0%);
+	}
+
+	.col-img-mob{
+		margin-top: 1.9rem;
+	}
+}
+
+@media (max-height: 736px) and (max-width: 768px) {
+	body{
+		background: linear-gradient(10deg, #fff962 44%, #255AC4 0%);
+	}
+
+	.col-img-mob{
+		margin-top: 1.9rem;
+	}
+}
+
+@media (max-height: 667px) and (max-width: 768px) {
+	body{
+		background: linear-gradient(10deg, #fff962 41%, #255AC4 0%);
+	}
+
+	.col-img-mob{
+		margin-top: 1.7rem;
+	}
+}
+
+@media (max-height: 576px) and (max-width: 768px) {
+	body{
+		background: linear-gradient(10deg, #fff962 39%, #255AC4 0%);
+	}
+
+	.col-img-mob{
+		margin-top: 1.7rem;
+	}
+}
+
+@media (max-width: 330px) {
+	.home{
+		.btn-app{
+			padding-top: 0;
+
+			&.btn-app-google{
+				padding-top: 0;
+			}
+
+			.btn-app-title{
+				font-size: 14px;
+			}
+			.btn-app-subtitle{
+				font-size: 8px;
+			}
+		}
 	}
 }

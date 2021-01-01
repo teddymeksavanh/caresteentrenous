@@ -1,0 +1,198 @@
+.vertical-align{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo{
+	border-radius: 10px;
+}
+
+.text-white-semi{
+	color: #ffffff;
+	opacity: 0.5;
+}
+
+.home{
+	.title{
+		color: #ffffff;
+		font-weight: 600;
+	}
+
+	.navbar-row{
+		position: absolute;
+		top: 1.5rem;
+		width: 100%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.header-title{
+		color: #ffffff;
+		font-weight: 600;
+		font-size: 2.5rem;
+	}
+
+	.btn-app{
+		border: 1px solid #ffffff;
+		border-radius: 8px;
+		padding: 5px 10px 10px;
+		color: #ffffff;
+
+		&.google-app{
+			padding: 5px 10px;
+		}
+
+		.btn-app-subtitle{
+			font-size: 13px;
+		}
+
+		.btn-app-title{
+			font-size: 18px;
+
+			&.google-app-title{
+				margin-bottom: 0.3rem;
+			}
+		}
+
+		.btn-apple-img{
+			height: 30px;
+		}
+
+		.btn-google-img{
+			height: 40px;
+		}
+	}
+
+	.right-img-position{
+		position: absolute;
+		right: 0;
+		width: 55%;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.kibu-toggler{
+		border: 0;
+		color: #ffffff;
+	}
+}
+
+.footer-copyright{
+	position: absolute;
+	bottom: 2rem;
+	font-size: 12px;
+	opacity: 0.5;
+	color: #ffffff;
+}
+
+.font-light{
+	font-weight: 300;
+}
+
+body {
+	background: linear-gradient(80deg, #255AC4 53%, #fff962 0%); 
+}
+
+html, body, #root{
+	height: 100%;
+}
+
+@media (max-width: 768px) {
+	body {
+		background: linear-gradient(10deg, #fff962 45%, #255AC4 0%);
+	}
+
+	.home{
+		padding-bottom: 3rem;
+
+		.footer-copyright{
+			display: none;
+		}
+
+		.footer-copyright-mob{
+			margin-top: 2.5rem;
+			font-size: 11px;
+			text-align: center;
+			opacity: 0.5;
+			display: block;
+			// color: #ffffff;
+		}
+
+		.kibu-toptext{
+			text-align: center;
+			margin-top: 3rem;
+			font-size: 16px;
+		}
+
+		.header-title{
+			text-align: center;
+			font-size: 2.5rem;
+		}
+
+		.kibu-subtext{
+			text-align: center;
+			font-size: 16px;
+		}
+
+		.btn-app{
+			padding: 5px 10px 10px;
+	
+			&.btn-app-apple{
+				margin-left: auto;
+			}
+
+			&.btn-app-google{
+				margin-right: auto;
+			}
+
+			&.google-app{
+				padding: 5px 10px;
+			}
+	
+			.btn-app-subtitle{
+				font-size: 11px;
+			}
+	
+			.btn-app-title{
+				font-size: 15px;
+	
+				&.google-app-title{
+					margin-bottom: 0.2rem;
+				}
+			}
+	
+			.btn-apple-img{
+				height: 20px;
+			}
+	
+			.btn-google-img{
+				height: 25px;
+			}
+		}
+
+		.right-img-position{
+			display: none;
+		}
+
+		.col-img-mob{
+			padding: 0;
+		}
+		
+		.fixed-top{
+			position: relative;
+		}
+	}
+
+	.h-100{
+		height: auto !important;
+	}
+
+	html, body, #root{
+		height: auto;
+	}
+}

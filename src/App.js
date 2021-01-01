@@ -9,7 +9,7 @@ function App({lang}) {
 		<section className="home h-100">
 			<div className="container fixed-top px-0 mt-3">
 				<nav className="navbar navbar-expand-lg navbar-light">
-					<a className="navbar-brand" href="#">
+					<a className="navbar-brand" href="/">
 						<div className="vertical-align">
 							<img src="/logo.png" height="40" className="mr-3 logo" alt="logo" />
 							<h5 className="text-uppercase mb-0 title">Kibu</h5>
@@ -51,20 +51,20 @@ function App({lang}) {
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">Contact</a>
+								<span className="nav-link" >Contact</span>
 							</li>
 							<li className="nav-item ml-5">
-								<a className="nav-link" href="#">
+								<a className="nav-link" href="/">
 									<img src="/Facebook.png" height="20" alt="facebook" />
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
+								<a className="nav-link" href="/">
 									<img src="/Instagram.png" height="20" alt="instagram" />
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="#">
+								<a className="nav-link" href="/">
 									<img src="/Union.png" height="20" alt="union" />
 								</a>
 							</li>
@@ -107,14 +107,14 @@ function App({lang}) {
 								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
 							</h5>
 							<div className="d-flex">
-								<a href="#" className="vertical-align btn-app mr-4 btn-app-apple">
+								<a href="/" className="vertical-align btn-app mr-4 btn-app-apple">
 									<img src="/Apple.png" alt="apple" className="mr-3 btn-apple-img" />
 									<div>
 										<span className="btn-app-subtitle">Download on the</span>
 										<h3 className="btn-app-title mb-0">App Store</h3>
 									</div>
 								</a>
-								<a href="#" className="vertical-align btn-app google-app btn-app-google">
+								<a href="/" className="vertical-align btn-app google-app btn-app-google">
 									<img src="/Google.png" alt="google" className="mr-3 btn-google-img" />
 									<div>
 										<span className="btn-app-subtitle text-uppercase">Get it On</span>
@@ -129,13 +129,13 @@ function App({lang}) {
 					</div>
 					<div className="col-lg-6 col-md-6 d-block d-sm-block d-md-none">
 						<div className="text-center">
-							<a href="#">
+							<a href="/">
 								<img src="/Facebook.png" height="20" alt="facebook" />
 							</a>
-							<a href="#" className="mx-4">
+							<a href="/" className="mx-4">
 								<img src="/Instagram.png" height="20" alt="instagram" />
 							</a>
-							<a href="#">
+							<a href="/">
 								<img src="/Union.png" height="20" alt="union" />
 							</a>
 						</div>

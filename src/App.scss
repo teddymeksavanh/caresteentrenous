@@ -88,7 +88,7 @@
 	.btn-app{
 		border: 1px solid #ffffff;
 		border-radius: 8px;
-		padding: 5px 10px 10px;
+		padding: 0px 15px;
 		color: #ffffff;
 
 		&.google-app{
@@ -101,7 +101,8 @@
 		}
 
 		.btn-app-title{
-			font-size: 18px;
+			line-height: 23px;
+			font-size: 23px;
 			white-space: nowrap;
 
 			&.google-app-title{
@@ -114,7 +115,7 @@
 		}
 
 		.btn-google-img{
-			height: 40px;
+			height: 30px;
 		}
 	}
 
@@ -202,26 +203,29 @@ html, body, #root{
 		}
 
 		.btn-app{
-			padding: 5px 10px 10px;
+			padding: 0 15px 2px 15px;
 	
 			&.btn-app-apple{
 				margin-left: auto;
 			}
 
 			&.btn-app-google{
+				padding-top: 0;
 				margin-right: auto;
 			}
 
 			&.google-app{
-				padding: 5px 10px;
+				padding: 0 10px;
 			}
 	
 			.btn-app-subtitle{
 				font-size: 11px;
+				font-weight: 500;
 			}
 	
 			.btn-app-title{
-				font-size: 15px;
+				font-size: 20px;
+				line-height: 17px;
 	
 				&.google-app-title{
 					margin-bottom: 0.2rem;
@@ -229,7 +233,7 @@ html, body, #root{
 			}
 	
 			.btn-apple-img{
-				height: 20px;
+				height: 30px;
 			}
 	
 			.btn-google-img{

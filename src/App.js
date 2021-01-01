@@ -113,20 +113,27 @@ function App({lang}) {
 								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
 							</h5>
 							<div className="d-flex">
-								<a href="/" className="vertical-align btn-app mr-3 btn-app-apple">
-									<img src="/Apple.png" alt="apple" className="mr-3 btn-apple-img" />
+								<a href="/" className="vertical-align btn-app mr-2 btn-app-apple">
+									<img src="/Apple.png" alt="apple" className="mr-2 btn-apple-img" />
 									<div>
 										<span className="btn-app-subtitle">Download on the</span>
-										<h3 className="btn-app-title mb-0">App Store</h3>
+										<h3 className="btn-app-title">App Store</h3>
 									</div>
 								</a>
-								<a href="/" className="vertical-align btn-app google-app btn-app-google">
-									<img src="/Google.png" alt="google" className="mr-3 btn-google-img" />
+								<a href="/" className="vertical-align btn-app btn-app-google">
+									<img src="/Google.png" alt="apple" className="mr-2 btn-google-img" />
+									<div>
+										<span className="btn-app-subtitle">GET IT ON</span>
+										<h3 className="btn-app-title">Google Play</h3>
+									</div>
+								</a>
+								{/* <a href="/" className="vertical-align btn-app google-app btn-app-google">
+									<img src="/Google.png" alt="google" className="mr-2 btn-google-img" />
 									<div>
 										<span className="btn-app-subtitle text-uppercase">Get it On</span>
 										<h3 className="btn-app-title google-app-title">Google Play</h3>
 									</div>
-								</a>
+								</a> */}
 							</div>
 						</div>
 					</div>

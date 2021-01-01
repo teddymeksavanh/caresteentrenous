@@ -1,0 +1,30 @@
+{
+	"privacy": {
+		"fr": "Politique de confidentialité",
+		"en": "Privacy policy"
+	},
+	"terms": {
+		"fr": "Conditions d'utilisation",
+		"en": "Terms of use"
+	},
+	"rate": {
+		"fr": null,
+		"en": "Rate Kibu ⭐"
+	},
+	"kibuToptext": {
+		"fr": "ÇA RESTE ENTRE NOUS",
+		"en": "LET'S KEEP IT BETWEEN US"
+	},
+	"headerTitle": {
+		"fr": "JOUE AVEC ÊTES PROCHES & FAIS-TOI DE NOUVEAUX AMIS 🤗🍺",
+		"en": "HAVE FUN WITH YOUR CREW 🤗🍺 & MAKE NEW FRIENDS"
+	},
+	"kibuSubtext": {
+		"fr": "Fini l’ennui, fous rires garantis avec",
+		"en": "No more boredom, we bring the fun"
+	},
+	"kibuSubtext2": {
+		"fr": "ce nouveau jeu qui rapproche !",
+		"en": "with this new relationship party game!"
+	}
+}

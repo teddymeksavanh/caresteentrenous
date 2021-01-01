@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import i18n from './i18n.json';
 import './App.scss';
 
-function App() {
+function App({lang}) {
 	const [toggle, setToggle] = useState(false);
 	const handleToggle = () => setToggle(!toggle);
   	return (
@@ -21,10 +21,14 @@ function App() {
 					{ toggle && <div className="kibu-navbar-collapse">
 						<ul>
 							<li>
-								<a className="empty-a" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">Privacy policy</a>
+								<a className="empty-a" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">
+									{ i18n.privacy[lang] || 'Privacy policy' }
+								</a>
 							</li>
 							<li>
-								<a className="empty-a" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">Terms of use</a>
+								<a className="empty-a" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">
+									{ i18n.terms[lang] || 'Terms of use' }
+								</a>
 							</li>
 							<li>
 								Contact
@@ -37,10 +41,14 @@ function App() {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<a className="nav-link" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">Privacy policy</a>
+								<a className="nav-link" href="https://www.notion.so/Kibu-Privacy-Policy-e6f6b73824b84e3a9a14fe5cea205443" target="_blank" rel="noreferrer noopener">
+									{ i18n.privacy[lang] || 'Privacy policy' }
+								</a>
 							</li>
 							<li className="nav-item mx-4">
-								<a className="nav-link" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">Terms of use</a>
+								<a className="nav-link" href="https://www.notion.so/Kibu-Terms-of-Use-1dfb72d1d5d4470788cbb0d3d9938adc" target="_blank" rel="noreferrer noopener">
+									{ i18n.terms[lang] || 'Terms of use' }
+								</a>
 							</li>
 							<li className="nav-item">
 								<a className="nav-link" href="#">Contact</a>
@@ -87,12 +95,16 @@ function App() {
 				<div className="row h-100">
 					<div className="col-lg-6 col-md-6 vertical-align">
 						<div>
-							<h5 className="text-uppercase mb-4 text-white-semi font-light kibu-toptext">LET'S KEEP IT BETWEEN US</h5>
+							<h5 className="text-uppercase mb-4 text-white-semi font-light kibu-toptext">
+								{ i18n.kibuToptext[lang] || "LET'S KEEP IT BETWEEN US" }
+							</h5>
 							<h1 className="text-uppercase header-title">
-								HAVE FUN WITH  YOUR CREW 🤗🍺 &amp; MAKE NEW FRIENDS
+								{ i18n.headerTitle[lang] || "HAVE FUN WITH YOUR CREW 🤗🍺 & MAKE NEW FRIENDS" }
 							</h1>
 							<h5 className="text-white my-4 font-light kibu-subtext">
-								No more boredom, we bring the fun<br/>with this new relationship party game!
+								{ i18n.kibuSubtext[lang] || "No more boredom, we bring the fun" }
+								<br/>
+								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
 							</h5>
 							<div className="d-flex">
 								<a href="#" className="vertical-align btn-app mr-4 btn-app-apple">
@@ -113,7 +125,7 @@ function App() {
 						</div>
 					</div>
 					<div className="col-lg-6 col-md-6 col-img-mob d-block d-sm-block d-md-none">
-						<img src="/GroupMOB.png" className="img-fluid" alt="group Mob" />
+						<img src={lang === 'fr' ? `/GroupFrMOB.png` : `/GroupMOB.png`} className="img-fluid" alt="group Mob" />
 					</div>
 					<div className="col-lg-6 col-md-6 d-block d-sm-block d-md-none">
 						<div className="text-center">
@@ -133,7 +145,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<img src="/Group.png" className="img-fluid right-img-position" alt="group" />
+			<img src={lang === 'fr' ? `/GroupFr.png` : `/Group.png`} className="img-fluid right-img-position" alt="group" />
 			<div className="bg-blue"></div>
 		</section>
   	);

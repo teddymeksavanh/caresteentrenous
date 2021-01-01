@@ -24,7 +24,7 @@
 
 	.kibu-navbar-collapse{
 		background: #ffffff;
-		border-radius: 5px;
+		border-radius: 8px;
 		position: absolute;
 		right: 28px;
 		bottom: -215%;
@@ -150,7 +150,7 @@ html, body, #root{
 }
 
 @media (max-width: 768px) {
-	body {
+	body{
 		background: linear-gradient(10deg, #fff962 45%, #255AC4 0%);
 	}
 

@@ -10,6 +10,7 @@ import {
 	Switch,
 	Route
 } from "react-router-dom";
+const lang = window.navigator.language;
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -28,7 +29,7 @@ ReactDOM.render(
 					<App lang="fr" />
 				</Route>
 				<Route path="/">
-					<App lang="en" />
+					<App lang={(lang === 'en' || lang === 'en-en' || lang === 'en-US' || lang === 'en-us') ? 'en' : 'fr'} />
 				</Route>
 			</Switch>
 		</Router>

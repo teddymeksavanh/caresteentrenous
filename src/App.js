@@ -113,14 +113,14 @@ function App({lang}) {
 								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
 							</h5>
 							<div className="d-flex">
-								<a href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} className="vertical-align btn-app mr-2 btn-app-apple" target="_blank">
+								<a href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} className="vertical-align btn-app mr-2 btn-app-apple" target="_blank" rel="noreferrer">
 									<img src="/Apple.png" alt="apple" className="mr-2 btn-apple-img" />
 									<div>
 										<span className="btn-app-subtitle">Download on the</span>
 										<h3 className="btn-app-title">App Store</h3>
 									</div>
 								</a>
-								<a href='https://play.google.com/store/apps/details?id=com.tjbkgconsulting.kibu' className="vertical-align btn-app btn-app-google" target="_blank">
+								<a href='https://play.google.com/store/apps/details?id=com.tjbkgconsulting.kibu' className="vertical-align btn-app btn-app-google" target="_blank" rel="noreferrer">
 									<img src="/Google.png" alt="apple" className="mr-2 btn-google-img" />
 									<div>
 										<span className="btn-app-subtitle">GET IT ON</span>

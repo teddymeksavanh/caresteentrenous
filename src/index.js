@@ -29,7 +29,7 @@ ReactDOM.render(
 					<App lang="fr" />
 				</Route>
 				<Route path="/">
-					<App lang={(lang === 'en' || lang === 'en-en' || lang === 'en-US' || lang === 'en-us') ? 'en' : 'fr'} />
+					<App lang={/^en\b/.test(lang) ? 'en' : 'fr'} />
 				</Route>
 			</Switch>
 		</Router>

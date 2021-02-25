@@ -27,12 +27,12 @@ function App({ lang }) {
 					{toggle && <div className="kibu-navbar-collapse">
 						<ul>
 							<li>
-								<Link className="empty-a" to="/privacy">
+								<Link className="empty-a" to="/terms">
 									{i18n.privacy[lang] || 'Privacy policy'}
 								</Link>
 							</li>
 							<li>
-								<Link className="empty-a" to="/terms">
+								<Link className="empty-a" to="/privacy">
 									{i18n.terms[lang] || 'Terms of use'}
 								</Link>
 							</li>
@@ -48,12 +48,12 @@ function App({ lang }) {
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
-								<Link className="nav-link" to="/privacy">
+								<Link className="nav-link" to="/terms">
 									{i18n.privacy[lang] || 'Privacy policy'}
 								</Link>
 							</li>
 							<li className={`nav-item ${lang === 'fr' ? 'mx-1' : 'mx-4'}`}>
-								<Link className="nav-link" to="/terms">
+								<Link className="nav-link" to="/privacy">
 									{i18n.terms[lang] || 'Terms of use'}
 								</Link>
 							</li>

@@ -3,15 +3,15 @@ import i18n from './i18n.json';
 import { Link } from "react-router-dom";
 import './App.scss';
 
-function App({lang}) {
+function App({ lang }) {
 	const [toggle, setToggle] = useState(false);
 	const handleToggle = () => setToggle(!toggle);
 	const body = document.getElementById('kibu-body');
 	body.classList.remove('body-fr-otherpage');
-	if(lang === 'fr') {
+	if (lang === 'fr') {
 		body.classList.add('body-fr');
 	}
-  	return (
+	return (
 		<section className="home h-100">
 			<div className="container fixed-top px-0 mt-3">
 				<nav className="navbar navbar-expand-lg navbar-light">
@@ -24,40 +24,41 @@ function App({lang}) {
 					<button className="navbar-toggler kibu-toggler" onClick={() => handleToggle()} type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 						<img src="/menu.png" width="30" alt="menu" />
 					</button>
-					{ toggle && <div className="kibu-navbar-collapse">
+					{toggle && <div className="kibu-navbar-collapse">
 						<ul>
 							<li>
-								<Link className="empty-a" to="/privacy">
-									{ i18n.privacy[lang] || 'Privacy policy' }
+								<Link className="empty-a" to="/privacy">
+									{i18n.privacy[lang] || 'Privacy policy'}
 								</Link>
 							</li>
 							<li>
-								<Link className="empty-a" to="/terms">
-									{ i18n.terms[lang] || 'Terms of use' }
+								<Link className="empty-a" to="/terms">
+									{i18n.terms[lang] || 'Terms of use'}
 								</Link>
 							</li>
 							<li>
-								<a className="empty-a" href="mailto:customerassistant@betterdays.co">Contact</a>
+								<a className="empty-a" href="mailto:support@kibugame.com">Contact</a>
 							</li>
 							<li>
-								Rate Kibu ⭐
+								<a className="empty-a" href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} target="_blank" rel="noreferrer">{lang === 'fr'? 'Note' : 'Rate'} Kibu ⭐</a>
+
 							</li>
 						</ul>
-					</div> }
+					</div>}
 					<div className="collapse navbar-collapse" id="navbarNav">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
 								<Link className="nav-link" to="/privacy">
-									{ i18n.privacy[lang] || 'Privacy policy' }
+									{i18n.privacy[lang] || 'Privacy policy'}
 								</Link>
 							</li>
 							<li className={`nav-item ${lang === 'fr' ? 'mx-1' : 'mx-4'}`}>
 								<Link className="nav-link" to="/terms">
-									{ i18n.terms[lang] || 'Terms of use' }
+									{i18n.terms[lang] || 'Terms of use'}
 								</Link>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="mailto:customerassistant@betterdays.co">Contact</a>
+								<a className="nav-link" href="mailto:support@kibugame.com">Contact</a>
 							</li>
 							<li className={`nav-item ${lang === 'fr' ? 'ml-2' : 'ml-5'}`}>
 								<a className="nav-link" href="https://www.facebook.com/gaming/kibugame/" target="_blank" rel="noreferrer noopener">
@@ -102,15 +103,15 @@ function App({lang}) {
 					<div className="col-lg-6 col-md-6 vertical-align" id="body-fr-col">
 						<div>
 							<h5 className="text-uppercase mb-4 text-white-semi font-light kibu-toptext">
-								{ i18n.kibuToptext[lang] || "LET'S KEEP IT BETWEEN US" }
+								{i18n.kibuToptext[lang] || "KEEP IT BETWEEN US"}
 							</h5>
 							<h1 className="text-uppercase header-title">
-								{ i18n.headerTitle[lang] || "HAVE FUN WITH YOUR CREW 🤗 & MAKE NEW FRIENDS" }
+								{i18n.headerTitle[lang] || "HAVE FUN WITH YOUR CREW 🤗 & MAKE NEW FRIENDS"}
 							</h1>
 							<h5 className="text-white my-4 font-light kibu-subtext">
-								{ i18n.kibuSubtext[lang] || "No more boredom, we bring the fun" }
-								<br/>
-								{ i18n.kibuSubtext2[lang] || "with this new relationship party game!" }
+								{i18n.kibuSubtext[lang] || "No more boredom, we bring the fun"}
+								<br />
+								{i18n.kibuSubtext2[lang] || "with this new relationship party game!"}
 							</h5>
 							<div className="d-flex">
 								<a href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} className="vertical-align btn-app mr-2 btn-app-apple" target="_blank" rel="noreferrer">
@@ -161,7 +162,7 @@ function App({lang}) {
 			<img src={lang === 'fr' ? `/GroupFr.png` : `/Group.png`} className="img-fluid right-img-position" alt="group" />
 			<div className="bg-blue"></div>
 		</section>
-  	);
+	);
 }
 
 export default App;

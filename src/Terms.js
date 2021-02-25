@@ -71,7 +71,7 @@ function Terms() {
 
 					<h4>13. ANY QUESTIONS?</h4>
 
-					<p>If you have any questions about TJBKG Consulting OU’ Services or Privacy Policy, feel free to contact us via email at <a href="mailto:customerassistant@betterdays.co">customerassistant@betterdays.co</a></p>
+					<p>If you have any questions about TJBKG Consulting OU’ Services or Privacy Policy, feel free to contact us via email at <a  href="mailto:support@kibugame.com">support@kibugame.com</a></p>
 				</div>
 			</div>
 		</div>

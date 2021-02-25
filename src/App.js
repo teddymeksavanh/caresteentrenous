@@ -66,7 +66,7 @@ function App({ lang }) {
 								</a>
 							</li>
 							<li className="nav-item">
-								<a className="nav-link" href="https://www.instagram.com/letskeepit_betweenus/" target="_blank" rel="noreferrer noopener">
+								<a className="nav-link" href="https://www.instagram.com/kibu_game/" target="_blank" rel="noreferrer noopener">
 									<img src="/Instagram.png" height="20" alt="instagram" />
 								</a>
 							</li>
@@ -146,7 +146,7 @@ function App({ lang }) {
 							<a href="https://www.facebook.com/gaming/kibugame/" target="_blank" rel="noreferrer noopener">
 								<img src="/Facebook.png" height="20" alt="facebook" />
 							</a>
-							<a href="https://www.instagram.com/letskeepit_betweenus/" target="_blank" rel="noreferrer noopener" className="mx-4">
+							<a href="https://www.instagram.com/kibu_game/" target="_blank" rel="noreferrer noopener" className="mx-4">
 								<img src="/Instagram.png" height="20" alt="instagram" />
 							</a>
 							<a href="https://www.tiktok.com/@kibugame" target="_blank" rel="noreferrer noopener">

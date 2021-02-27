@@ -13,7 +13,7 @@ import {
 // import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const lang = window.navigator.language;
-const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
+// const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
 
 ReactDOM.render(
 	<>

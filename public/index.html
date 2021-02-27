@@ -61,11 +61,10 @@
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <script>
-      const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
       let link = document.createElement('meta');
       link.setAttribute('property', 'content');
       link.property = 'og:image'
-      if (FRURL) {
+      if (window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr') {
         link.content = 'https://www.kibugame.com/fr.png'
       } else {
         link.content = 'https://www.kibugame.com/en.png'

@@ -13,7 +13,7 @@ import {
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const lang = window.navigator.language;
-console.log(window.location)
+
 ReactDOM.render(
 	<>
 		{/^en\b/.test(lang) ?

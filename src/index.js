@@ -13,17 +13,18 @@ import {
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const lang = window.navigator.language;
+const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
 
 ReactDOM.render(
 	<>
-		{/^en\b/.test(lang) ?
+		{FRURL ?
 			<HelmetProvider>
 				<Helmet>
 					<title>Kibu - Fun Convos With Friends</title>
 					<meta property="og:title" content="Kibu - Fun Convos With Friends" />
 					<meta name="description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
 					<meta property="og:description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
-					<meta property="og:image:secure" content="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" />
+					<meta property="og:image:secure" content="https://www.kibugame.com/en.png" />
 					<meta property="og:url" content="https://www.kibugame.com/" />
 				</Helmet>
 			</HelmetProvider> :
@@ -35,7 +36,7 @@ ReactDOM.render(
 					Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
 					<meta property="og:description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
 					Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
-					<meta property="og:image:secure" content="./fr.png" />
+					<meta property="og:image:secure" content="https://www.kibugame.com/fr.png" />
 					<meta property="og:url" content="https://www.kibugame.com/fr" />
 				</Helmet>
 			</HelmetProvider>

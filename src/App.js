@@ -109,9 +109,7 @@ function App({ lang }) {
 								{i18n.headerTitle[lang] || "HAVE FUN WITH YOUR CREW 🤗 & MAKE NEW FRIENDS"}
 							</h1>
 							<h5 className="text-white my-4 font-light kibu-subtext">
-								{i18n.kibuSubtext[lang] || "No more boredom, we bring the fun"}
-								<br />
-								{i18n.kibuSubtext2[lang] || "with this new relationship party game!"}
+								{i18n.kibuSubtext[lang] || "This game is filled with thought-provoking questions to start incredible conversations with friends, family, dates, and even fun strangers"}
 							</h5>
 							<div className="d-flex">
 								<a href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} className="vertical-align btn-app mr-2 btn-app-apple" target="_blank" rel="noreferrer">

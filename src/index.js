@@ -17,7 +17,7 @@ const lang = window.navigator.language;
 
 ReactDOM.render(
 	<>
-		{/^en\b/.test(lang) ?
+		{/* {/^en\b/.test(lang) ?
 			<HelmetProvider>
 				<Helmet>
 					<title>Kibu - Fun Convos With Friends</title>
@@ -36,7 +36,7 @@ ReactDOM.render(
 					<meta property="og:image" content="%PUBLIC_URL%/logofr.png" />
 				</Helmet>
 			</HelmetProvider>
-		}
+		} */}
 		<React.StrictMode>
 			<Router>
 				<Switch>

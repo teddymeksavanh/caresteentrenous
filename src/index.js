@@ -10,7 +10,7 @@ import {
 	Switch,
 	Route
 } from "react-router-dom";
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+// import { Helmet, HelmetProvider } from 'react-helmet-async';
 import 'babel-polyfill'
 
 const lang = window.navigator.language;

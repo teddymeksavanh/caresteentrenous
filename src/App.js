@@ -17,6 +17,7 @@ function App({ lang }) {
 			{lang === 'fr' ?
 				<HelmetProvider>
 					<Helmet>
+						<title>Kibu - Ça Reste Entre Nous‪®</title>
 						<meta property="og:description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
 						Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
 						<meta property="og:image" content="%PUBLIC_URL%/logofr.png" />
@@ -24,6 +25,7 @@ function App({ lang }) {
 				</HelmetProvider> :
 				<HelmetProvider>
 					<Helmet>
+						<title>Kibu - Fun Convos With Friends</title>
 						<meta property="og:description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
 						<meta property="og:image" content="%PUBLIC_URL%/logoen.png" />
 					</Helmet>

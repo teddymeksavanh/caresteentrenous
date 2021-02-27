@@ -9,8 +9,21 @@
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo.png" />
   <meta property="og:title" content="KIBU" />
   <meta property="og:url" content="https://www.kibugame.com" />
-  <meta property="og:description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
-  <meta property="og:image" content="./logoen.png" />
+  <!-- <meta property="og:image" content="./logoen.png" /> -->
+  <!-- <title>Moonzo • Astrology Matching | Meet New Friends</title>
+  <meta content="Meet Moonzo - the astrology app that puts a new spin on making friends and building meaningful connections." />
+  <meta content="Moonzo • Astrology Matching | Meet New Friends" property="og:title" />
+  <meta content="Meet Moonzo - the astrology app that puts a new spin on making friends and building meaningful connections."
+    property="og:description" />
+  <meta content="Moonzo • Astrology Matching | Meet New Friends" property="twitter:title" />
+  <meta
+    content="Meet Moonzo - the astrology app that puts a new spin on making friends and building meaningful connections."
+    property="twitter:description" /> -->
+  <meta property="og:image" content="https://www.moonzo.com/META.jpg" />
+  <meta property="og:image:secure_url" content="https://www.moonzo.com/META.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:type" content="website" />
+  <meta content="summary_large_image" name="twitter:card" />
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -27,6 +40,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
 	-->
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WH6S6PN');</script>
+  <!-- End Google Tag Manager -->
   <!-- Facebook Pixel Code -->
   <script defer>
     !function (f, b, e, v, n, t, s) {
@@ -50,31 +73,12 @@
 </head>
 
 <body id="kibu-body">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH6S6PN" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  <script>
-    var link = document.createElement('meta');
-    link.setAttribute('name', 'content');
-    link.name = 'description'
-    document.getElementsByTagName('head')[0].appendChild(link);
-    if (/^en\b/.test(window.navigator.language)) {
-      document.title = 'Kibu - Fun Convos With Friends'
-      link.content = 'Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick.'
-    } else {
-      document.title = 'Kibu - Ça Reste Entre Nous‪®'
-      link.content = `Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos "dates", vos collègues et même des inconnus amusants. Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive.`
-    }
-  </script>
 </body>
 
 </html>

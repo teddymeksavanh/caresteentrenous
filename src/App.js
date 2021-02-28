@@ -18,7 +18,7 @@ function App({ lang }) {
 			{!FRURL ?
 				<Helmet>
 					<title>Kibu - Fun Convos With Friends</title>
-					<meta property="og:url" content="https://www.kibugame.com/" />
+					<meta property="og:url" content="https://www.kibugame.com/en" />
 					<meta property="og:title" content="Kibu - Fun Convos With Friends" />
 					<meta name="description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
 					<meta property="og:description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />

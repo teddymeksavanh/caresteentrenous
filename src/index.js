@@ -24,14 +24,14 @@ render(
 				<Route path="/privacy">
 					<Privacy />
 				</Route>
-				<Route path="/en">
+				<Route path="/en" exact>
 					<App lang="en" />
 				</Route>
-				<Route path="/fr">
+				<Route path="/fr" exact>
 					<AppFR lang="fr" />
 				</Route>
-				<Route path="/">
-					<App lang={/^en\b/.test(lang) ? 'en' : 'fr'} />
+				<Route path="/" exact>
+					{/^en\b/.test(lang) ? <App lang="en" /> : <AppFR lang="fr" />}
 				</Route>
 			</Switch>
 		</Router>

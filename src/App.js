@@ -12,7 +12,6 @@ function App({ lang }) {
 	if (lang === 'fr') {
 		body.classList.add('body-fr');
 	}
-	const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true : false;
 	return (
 		<>
 			<Helmet>

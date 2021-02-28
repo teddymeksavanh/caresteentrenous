@@ -14,16 +14,26 @@ function App({ lang }) {
 	}
 	return (
 		<>
-			<Helmet>
-				<title>Kibu - Ça Reste Entre Nous‪®</title>
-				<meta property="og:url" content="https://www.kibugame.com/fr" />
-				<meta property="og:title" content="Kibu - Ça Reste Entre Nous‪®" />
-				<meta name="description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
-					Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
-				<meta property="og:description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
-					Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
-				<meta property="og:image" content="https://www.kibugame.com/fr.png" />
-			</Helmet>
+			{lang === 'en' ?
+				<Helmet>
+					<title>Kibu - Fun Convos With Friends</title>
+					<meta property="og:url" content="https://www.kibugame.com/en" />
+					<meta property="og:title" content="Kibu - Fun Convos With Friends" />
+					<meta name="description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
+					<meta property="og:description" content="Kibu is a fun social game that deepens your relationships with friends, family, dates, colleagues, and even fun strangers. This game is filled with questions to start incredible conversations and keep them going. By asking the right questions, you’ll gain a better understanding of who your friends are and what makes them tick." />
+					<meta property="og:image" content="https://www.kibugame.com/en.png" />
+				</Helmet> :
+				<Helmet>
+					<title>Kibu - Ça Reste Entre Nous‪®</title>
+					<meta property="og:url" content="https://www.kibugame.com/fr" />
+					<meta property="og:title" content="Kibu - Ça Reste Entre Nous‪®" />
+					<meta name="description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
+						Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
+					<meta property="og:description" content="Kibu - Ça Reste Entre Nous®️ est un jeu social amusant qui approfondit vos relations avec vos amis, votre famille, vos 'dates', vos collègues et même des inconnus amusants. 
+						Ce jeu est truffé de questions qui permettent d'entamer et de poursuivre des conversations incroyables. En posant les bonnes questions, vous comprendrez mieux qui sont vos amis et ce qui les motive." />
+					<meta property="og:image" content="https://www.kibugame.com/fr.png" />
+				</Helmet>
+			}
 			<section className="home h-100">
 				<div className="container fixed-top px-0 mt-3">
 					<nav className="navbar navbar-expand-lg navbar-light">

@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-snapshot';
 import './index.css';
 import App from './App';
+import AppFR from './fr';
 import Privacy from './Privacy';
 import Terms from './Terms';
 import reportWebVitals from './reportWebVitals';
@@ -27,7 +28,7 @@ render(
 					<App lang="en" />
 				</Route>
 				<Route path="/fr">
-					<App lang="fr" />
+					<AppFR lang="fr" />
 				</Route>
 				<Route path="/">
 					<App lang={/^en\b/.test(lang) ? 'en' : 'fr'} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import './index.css';
 import App from './App';
 import Privacy from './Privacy';
@@ -10,14 +10,14 @@ import {
 	Switch,
 	Route
 } from "react-router-dom";
-// import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const lang = window.navigator.language;
-// const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
+const FRURL = window.location.pathname.split('/')[1] && window.location.pathname.split('/')[1] === 'fr' ? true :false;
 
-ReactDOM.render(
+render(
 	<>
-		{/* {FRURL ?
+		{FRURL ?
 			<HelmetProvider>
 				<Helmet>
 					<title>Kibu - Fun Convos With Friends</title>
@@ -40,7 +40,7 @@ ReactDOM.render(
 					<meta property="og:image:secure" content="https://www.kibugame.com/fr.png" />
 				</Helmet>
 			</HelmetProvider>
-		} */}
+		}
 		<React.StrictMode>
 			<Router>
 				<Switch>

@@ -28,6 +28,12 @@
       "react-app/jest"
     ]
   },
+  "reactSnapshot": {
+    "include": [
+      "/fr"
+    ],
+    "snapshotDelay": 300
+  },
   "browserslist": {
     "production": [
       ">0.2%",

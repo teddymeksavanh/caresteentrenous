@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-snapshot';
-import './index.css';
+import './App.scss';
 import App from './App';
-import AppFR from './fr';
+import AppFR from './Appfr';
 import Privacy from './Privacy';
 import Terms from './Terms';
 import reportWebVitals from './reportWebVitals';
@@ -25,13 +25,13 @@ render(
 					<Privacy />
 				</Route>
 				<Route path="/en" exact>
-					<App lang="en" />
+					<App />
 				</Route>
 				<Route path="/fr" exact>
-					<AppFR lang="fr" />
+					<AppFR />
 				</Route>
 				<Route path="/" exact>
-					{/^en\b/.test(lang) ? <App lang="en" /> : <AppFR lang="fr" />}
+					{/^en\b/.test(lang) ? <App /> : <AppFR />}
 				</Route>
 			</Switch>
 		</Router>

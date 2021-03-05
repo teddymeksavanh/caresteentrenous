@@ -33,6 +33,7 @@ render(
 				<Route path="/" exact>
 					{/^en\b/.test(lang) ? <App /> : <AppFR />}
 				</Route>
+				<Route><App /></Route>
 			</Switch>
 		</Router>
 	</React.StrictMode>,

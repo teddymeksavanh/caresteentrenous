@@ -141,6 +141,7 @@ code {
     top: 0;
     bottom: 0;
     margin: auto;
+    max-height: 100vh;
   }
 
   .kibu-toggler {
@@ -287,7 +288,11 @@ body,
   }
 
   .col-img-mob {
-    margin-top: 1.9rem;
+    margin-top: 0;
+    img {
+      margin-bottom: -50px;
+      width: 100%;
+    }
   }
 }
 
@@ -295,29 +300,17 @@ body,
   body {
     background: linear-gradient(10deg, #fff962 44%, #255ac4 0%);
   }
-
-  .col-img-mob {
-    margin-top: 1.9rem;
-  }
 }
 
 @media (max-height: 667px) and (max-width: 768px) {
   body {
     background: linear-gradient(10deg, #fff962 41%, #255ac4 0%);
   }
-
-  .col-img-mob {
-    margin-top: 1.7rem;
-  }
 }
 
 @media (max-height: 576px) and (max-width: 768px) {
   body {
     background: linear-gradient(10deg, #fff962 39%, #255ac4 0%);
-  }
-
-  .col-img-mob {
-    margin-top: 1.7rem;
   }
 }
 

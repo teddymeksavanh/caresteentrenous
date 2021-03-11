@@ -92,7 +92,7 @@ function Homepage({ lang }) {
 									{i18n.headerTitle[lang] || "HAVE FUN WITH YOUR CREW 🤗 & MAKE NEW FRIENDS"}
 								</h1>
 								<h5 className="text-white my-4 font-light kibu-subtext">
-									{i18n.kibuSubtext[lang] || "This game is filled with thought-provoking questions to start incredible conversations with friends, family, dates, and even fun strangers"}
+									{i18n.kibuSubtext[lang] || "How well do you really know your friends? And how much do they really know about you? Kibu is an audio-based card game that deepens your relationships with friends, dates, and even strangers."}
 								</h5>
 								<div className="d-flex">
 									<a href={lang === 'fr' ? 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=fr' : 'https://apps.apple.com/fr/app/kibu-fun-convos-with-friends/id1543589401?l=en'} className="vertical-align btn-app mr-2 btn-app-apple" target="_blank" rel="noreferrer">

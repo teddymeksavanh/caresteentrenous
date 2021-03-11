@@ -81,7 +81,6 @@ function Homepage({ lang }) {
 					</nav>
 				</div>
 				<div className="container h-100">
-					<span className="d-none d-md-block footer-copyright">Copyright © 2020 TJBKG consulting OÜ. All Rights Reserved.</span>
 					<div className="row h-100">
 						<div className="col-lg-6 col-md-6 vertical-align" id="body-fr-col">
 							<div>
@@ -110,6 +109,7 @@ function Homepage({ lang }) {
 										</div>
 									</a>
 								</div>
+								<span className="d-none d-md-block footer-copyright">Copyright © 2020 TJBKG consulting OÜ. All Rights Reserved.</span>
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-6 col-img-mob d-block d-sm-block d-md-none">

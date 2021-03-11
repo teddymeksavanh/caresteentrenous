@@ -137,11 +137,10 @@ code {
   .right-img-position {
     position: absolute;
     right: 0;
-    width: 55%;
+    width: 58%;
     top: 0;
     bottom: 0;
     margin: auto;
-    max-height: 100vh;
   }
 
   .kibu-toggler {
@@ -180,6 +179,7 @@ html,
 body,
 #root {
   height: 100%;
+  min-height: 835px;
 }
 
 @media (max-width: 768px) {
@@ -279,6 +279,7 @@ body,
   body,
   #root {
     height: auto;
+    min-height: auto;
   }
 }
 
